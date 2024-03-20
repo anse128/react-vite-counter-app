@@ -2,6 +2,8 @@ import React from 'react' // imr
 import ReactDOM from 'react-dom/client' //imp
 import { HelloWorldApp } from './HelloWorldApp'
 import { FirstApp } from './FirstApp'
+
+import './styles.css'
 // componente inicial
 //los componentes no suelen estar en el main
 // function App() {     // todos los nombres de sus functional components van capitalizados con PascalCase o UpperCamelCase
@@ -13,7 +15,7 @@ import { FirstApp } from './FirstApp'
 ReactDOM.createRoot(document.getElementById('root')).render( // id = root del html
     <React.StrictMode> {/* se aconseja trabajar en modo estricto*/}
         <HelloWorldApp />   {/*      renderizamos el app */}
-        <FirstApp />
+        <FirstApp title="Hola, soy cacorro" subTitle={123} />
     </React.StrictMode>
 )
 

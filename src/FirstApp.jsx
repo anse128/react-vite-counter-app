@@ -11,12 +11,16 @@ const newMessage = {
     title: 'Sebastian'
 }
 
-const getResult = (i) =>{
-    return(2+2+i)
+const getResult = (i) => {
+    return (2 + 2 + i)
 }
 
 
-export const FirstApp = () => {
+// export const FirstApp = (props) => { // no es lo comun usar las props así 
+// export const FirstApp = ({ title = 'Hola, Soy Sebastián'}) => { // valor por defecto
+export const FirstApp = ({ title, subTitle }) => { // 
+
+    console.log(title)
 
     return (
         // <div>
@@ -28,13 +32,15 @@ export const FirstApp = () => {
         //     <h2>FirstApp</h2>
         // </Fragment>
         <>
-            <h2>{newMessage.title}</h2>
+            {/* <h2>{newMessage.title}</h2> */}
+            {/* <h2>{props.title}</h2> */}
+            <h2>{title}</h2>
 
-            <h2>{getResult(2)}</h2> {/*  no puede ser una función asincrona*/}
+            {/* <h2>{getResult(2)}</h2>  no puede ser una función asincrona */}
 
-            <code>{JSON.stringify(newMessage)}</code>
+            {/* <code>{JSON.stringify(newMessage)}</code> */}
 
-            <p>Soy un subtitulo</p>
+            <p>{subTitle + 1}</p>
         </>
     )
 }
