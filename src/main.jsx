@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render( // id = root del ht
         {/* <HelloWorldApp />        renderizamos el app */}
         {/* <FirstApp title="Hola, soy cacorro" subTitle={123} /> */}
         {/* <FirstApp title /> booleano */}
-        <FirstApp title="Hola, Soy Goku" subTitle={123} />
+        <FirstApp />
         {/* <FirstApp  /> */}
     </React.StrictMode>
 )
