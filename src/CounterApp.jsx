@@ -12,6 +12,14 @@ export const CounterApp = ({ value }) => {
         // setCounter(counter + 1)
         setCounter((c)=>c+1)           //otra forma
     }
+    
+    const handleDecrease = () => {
+        setCounter((c)=>c-1)         
+    }
+    
+    const handleReset = () => {
+        setCounter((c)=>value)      
+    }
 
     // function handleAdd(event, newValue) {
     //     console.log(event)
@@ -24,6 +32,12 @@ export const CounterApp = ({ value }) => {
             {/* <button onClick={(event) => handleAdd(event, 'Hola')}> */}
             <button onClick={handleAdd}>
                 +1
+            </button >
+            <button onClick={handleDecrease}>
+                -1
+            </button >
+            <button onClick={handleReset}>
+                Reset
             </button >
         </>
 
