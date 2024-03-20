@@ -1,8 +1,9 @@
 import React from 'react' // imr
 import ReactDOM from 'react-dom/client' //imp
 import { HelloWorldApp } from './HelloWorldApp'
-import { FirstApp } from './FirstApp'
+// import { FirstApp } from './FirstApp'
 
+import { CounterApp } from './CounterApp'
 import './styles.css'
 // componente inicial
 //los componentes no suelen estar en el main
@@ -17,7 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render( // id = root del ht
         {/* <HelloWorldApp />        renderizamos el app */}
         {/* <FirstApp title="Hola, soy cacorro" subTitle={123} /> */}
         {/* <FirstApp title /> booleano */}
-        <FirstApp />
+        {/* <FirstApp /> */}
+        <CounterApp value={10}/>
         {/* <FirstApp  /> */}
     </React.StrictMode>
 )
