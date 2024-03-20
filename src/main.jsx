@@ -14,8 +14,11 @@ import './styles.css'
 // forma de renderizar el componente
 ReactDOM.createRoot(document.getElementById('root')).render( // id = root del html
     <React.StrictMode> {/* se aconseja trabajar en modo estricto*/}
-        <HelloWorldApp />   {/*      renderizamos el app */}
-        <FirstApp title="Hola, soy cacorro" subTitle={123} />
+        {/* <HelloWorldApp />        renderizamos el app */}
+        {/* <FirstApp title="Hola, soy cacorro" subTitle={123} /> */}
+        {/* <FirstApp title /> booleano */}
+        <FirstApp title="Hola, Soy Goku" subTitle={123} />
+        {/* <FirstApp  /> */}
     </React.StrictMode>
 )
 

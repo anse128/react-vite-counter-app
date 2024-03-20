@@ -6,21 +6,28 @@
 
 // const newMessage = 'Fernando' // Regla si la variable no esta cambiando de valor debe de ir fuera del functional component, porque react no va a reprocesar algo que este fuera del componente
 
-const newMessage = {
-    message: 'Hola Mundo',
-    title: 'Sebastian'
-}
+import PropTypes from 'prop-types' // para definirle el tipo a las propiedades
 
-const getResult = (i) => {
-    return (2 + 2 + i)
-}
+// const newMessage = {
+//     message: 'Hola Mundo',
+//     title: 'Sebastian'
+// }
+
+// const getResult = (i) => {
+//     return (2 + 2 + i)
+// }
 
 
 // export const FirstApp = (props) => { // no es lo comun usar las props así 
 // export const FirstApp = ({ title = 'Hola, Soy Sebastián'}) => { // valor por defecto
 export const FirstApp = ({ title, subTitle }) => { // 
 
-    console.log(title)
+    // console.log(title)
+
+    // if (!title) {
+    //     throw new Error('El title no existe')
+    // }
+
 
     return (
         // <div>
@@ -40,8 +47,13 @@ export const FirstApp = ({ title, subTitle }) => { //
 
             {/* <code>{JSON.stringify(newMessage)}</code> */}
 
-            <p>{subTitle + 1}</p>
+            <p>{subTitle}</p> {/*  */}
         </>
     )
 }
 
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired, // manda error si no es mandado
+    subTitle: PropTypes.number.isRequired
+}
