@@ -2,4 +2,5 @@ export function getSaludo(nombre) { // no se puede hacer una prueba de algo que 
     return 'Hola ' + nombre;
 }
 
-console.log( `Este es un texto: ${ getSaludo( nombre ) }  ` );
+const nombre = 'Pedro'
+console.log(`Este es un texto: ${getSaludo(nombre)}  `);
