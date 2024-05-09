@@ -45,7 +45,7 @@ describe('Pruebas en 08-imp-exp', () => {
             {
                 id: 3,
                 name: 'Superman',
-                owner: 'DC'
+                owner: 'DC' 
             },
             {
                 id: 4,
