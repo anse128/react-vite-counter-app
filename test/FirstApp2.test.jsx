@@ -5,7 +5,7 @@ describe('Pruebas en <FirstApp/>', () => {
 
     const title = 'Hola, Soy Goku'
     const subTitle = 'Soy un subtitulo'
-    
+
 
     test('Debe de hacer match con el snapshot', () => {
 
@@ -19,11 +19,10 @@ describe('Pruebas en <FirstApp/>', () => {
         render(<FirstApp title={title} />)
         expect(screen.getByText(title)).not.toBeTruthy
         // screen.debug()
-
     })
 
 
-    test('Debe de mostrar el titulo en un h1"', () => {
+    test('Debe de mostrar el titulo en un h1', () => {
 
         render(<FirstApp title={title} />)
         expect(screen.getByRole('heading', { level: 1 }).innerHTML).toContain(title)

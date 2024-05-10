@@ -9,8 +9,8 @@ import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render( // id = root del html
     <React.StrictMode> 
-        {/* <CounterApp value={10} /> */}
-        <FirstApp  title = "Hola, Soy Vegeta"/>
+        <CounterApp value={10} />
+        {/* <FirstApp  title = "Hola, Soy Vegeta"/> */}
     </React.StrictMode>
 )
 
